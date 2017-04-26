@@ -9,6 +9,10 @@ describe Robot do
       expect(@r1).to be_instance_of Robot
     end
 
+    it 'should create new robot name' do
+      expect(@r1.name).to match(/^[A-Z]{2}\d{3}$/)
+    end
+
     it 'should create robots with different name' do
       @r2 = Robot.new
       expect(@r1.name).not_to eq(@r2.name)
