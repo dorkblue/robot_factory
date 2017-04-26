@@ -12,7 +12,8 @@ class Robot
   end
 
   def reset
-    @name = nil
+    alphabets = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    @name = "#{alphabets[rand(0..25)]}#{alphabets[rand(0..25)]}#{rand(100..999)}"
   end
 end
 

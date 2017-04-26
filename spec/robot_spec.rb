@@ -5,7 +5,6 @@ describe Robot do
     @r1 = Robot.new
   end
   describe 'Initialization' do
-
     it 'should create new robot that is the instance of Robot' do
       expect(@r1).to be_instance_of Robot
     end
