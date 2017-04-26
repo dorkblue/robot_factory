@@ -17,11 +17,6 @@ describe Robot do
   end
 
   describe 'Reset' do
-    it 'should create new name for robot' do
-      @r1.reset
-      expect(@r1.key?(:name)).to eq true
-    end
-
     it 'should create new name that is different from previous name' do
       old_name = @r1.name
       @r1.reset
